@@ -1,0 +1,90 @@
+ /* Fundo bicolor */
+ body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #2d2bc1 70%, #d0ff59 30%);
+    color: #d0ff59;
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* Logo no canto superior esquerdo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d0ff59;
+}
+
+/* Foto de perfil centralizada na junção das duas cores */
+.profile-pic {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Coluna de texto */
+.text-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80%;
+    padding-left: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d0ff59;
+    margin: 100px 0 20px; /* Adiciona espaço acima do título */
+}
+
+.title span {
+    color: white;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* Skills na parte inferior da coluna de texto com caixas lado a lado */
+.skills {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: auto;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.skill-box {
+    background-color: #2d2bc1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #d0ff59;
+    flex: 1;
+    text-align: center;
+}   
